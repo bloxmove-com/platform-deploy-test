@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "782cd4db-bf8e-4ebf-b20f-82e68aef69f0",
+		"name": "1. create new vehicles and service-packages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. fleet-node operations",
+			"item": [
+				{
+					"name": "fleet-node-local-A",
+					"item": [
+						{
+							"name": "create vehicle asset (set VIN manually!)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "apiKey",
+										"type": "text",
+										"value": "{{apiKeyFleetnodeA}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vin\": \"HDZBRBD37JDSN3\",\n  \"walletDIDs\": [\"{{carWalletDID}}\"],\n  \"proofOfOwnership\": \"my-proof-of-ownership-url-no-need-to-change\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fleetnodeA}}/vehicle-assets",
+									"host": [
+										"{{fleetnodeA}}"
+									],
+									"path": [
+										"vehicle-assets"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+
+			]
+		}
+	]
+}

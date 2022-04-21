@@ -12,7 +12,7 @@ const runtimeConfig = {
     ipfsPort: 443,
     ipfsProtocol: `https`,
     ipfsBasePath: '/ipfs/api/v0',
-    accountAddress: process.argv[2], // Fleet Owner 1
+    accountAddress: process.argv[2],
     accountPrivateKey: process.argv[3],
     didRegistryAddress: '0x4D659D2831586Bedae902E0d2360392038266aB0',
     attestationRegistryAddress: '0x7edBEFAa8663e36E89Da2f9719d8108fa9236D46',
@@ -36,7 +36,7 @@ async function init() {
 
 async function setAndGetDIDDocument(ethereumAssetService) {
     const did = `did:ethr:${runtimeConfig.networkName}:${runtimeConfig.accountAddress}`;
-    console.log('did: ' + did);
+    // console.log('did: ' + did);
     const document = await ethereumAssetService.getDIDDocument(did);
 
     const service = [{
@@ -50,8 +50,8 @@ async function setAndGetDIDDocument(ethereumAssetService) {
     await ethereumAssetService.setDIDDocument(document);
 
     const retrieved = await ethereumAssetService.getDIDDocument(did);
-    console.log('retrieved Document: ')
-    console.log(retrieved);
+    // console.log('retrieved Document: ')
+    // console.log(retrieved);
 }
 
 init();
