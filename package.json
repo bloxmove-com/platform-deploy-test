@@ -1,0 +1,50 @@
+{
+  "name": "platform-deploy-test",
+  "version": "1.9.0",
+  "description": "This repository contains all kind of test artifacts of the Mobility Blockchain Platform",
+  "scripts": {
+    "test:e2e": "env TEST_ENV=uat jest --forceExit --runInBand --verbose",
+    "test:e2e:local": "env TEST_ENV=local jest --forceExit --runInBand --verbose",
+    "test:e2e:dev": "env TEST_ENV=dev jest --forceExit --runInBand --verbose",
+    "test:e2e:uat": "env TEST_ENV=uat jest --forceExit --runInBand --verbose",
+    "test:e2e:local-k3s": "env TEST_ENV=local-k3s jest --forceExit --runInBand --verbose",
+    "test:e2e:local-ganache": "env TEST_ENV=local-ganache jest --forceExit --runInBand --verbose",
+    "test:e2e:local-quorum": "env TEST_ENV=local-quorum jest --forceExit --runInBand --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloxmove-com/platform-deploy-test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^16.11.9",
+    "@types/zen-observable": "^0.8.3",
+    "jest": "^25.2.7",
+    "ontology-ts-sdk": "^1.1.13",
+    "rxjs": "^7.4.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^4.2.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".spec.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@bloxmove-com/did-asset-library-core": "^0.0.20",
+    "@nestjs/axios": "^0.0.3",
+    "@nestjs/common": "^8.2.2",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0"
+  }
+}
