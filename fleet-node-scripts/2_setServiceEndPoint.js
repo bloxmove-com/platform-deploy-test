@@ -5,18 +5,18 @@
 const assetlib = require('@bloxmove-com/did-asset-library-core')
 
 const runtimeConfig = {
-    web3Provider: 'https://onb.kooltech.com.tw/besu-validator1-rpc',
+    web3Provider: 'https://stablestage.kooltech.com.tw/besu-validator1-rpc',
     chainId: '1000',
-    networkName: 'blxm-onboarding',
-    ipfsHost: 'onb.kooltech.com.tw',
+    networkName: 'blxm-stable-stage',
+    ipfsHost: 'stablestage.kooltech.com.tw',
     ipfsPort: 443,
     ipfsProtocol: `https`,
     ipfsBasePath: '/ipfs/api/v0',
     accountAddress: process.argv[2], // Fleet Owner 1
     accountPrivateKey: process.argv[3],
-    didRegistryAddress: '0x4D659D2831586Bedae902E0d2360392038266aB0',
-    attestationRegistryAddress: '0x7edBEFAa8663e36E89Da2f9719d8108fa9236D46',
-    ensAddress: '0xeDf4e8248f9CE108c4b7AAb0fA8BeE509C6D247b',
+    didRegistryAddress: '0xe9Ed0193467607CdE5DF2150FB22bad50C0c78DB',
+    attestationRegistryAddress: '0x784Dc6cdb7d7e74e571Ff73ddF46917A67CBa7aC',
+    ensAddress: '0xd4aa5a98628Bc346676BAA87219C90997D785337',
     didDefaultValidity: '31536000000',
     resolverName: 'resolver',
     gasLimit: 6721975
