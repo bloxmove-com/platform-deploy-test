@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "782cd4db-bf8e-4ebf-b20f-82e68aef69f0",
+		"_postman_id": "bf0984eb-9b89-4d73-baa9-bc4ea84543f1",
 		"name": "1. create new vehicles and service-packages",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -48,10 +48,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "get vehicle asset (set VIN manually!)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "apiKey",
+										"value": "{{apiKeyFleetnodeA}}",
+										"type": "default"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{fleetnodeA}}/vehicle-assets/HDZBRBD37JDSN3",
+									"host": [
+										"{{fleetnodeA}}"
+									],
+									"path": [
+										"vehicle-assets",
+										"HDZBRBD37JDSN3"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				}
-
 			]
 		}
 	]
