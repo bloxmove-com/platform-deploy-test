@@ -26,3 +26,8 @@ Preparing your TOMP transport-operator `URL`, `MaaS-ID` and `accept language`, h
 * URL: http://3.123.228.24:8083
 * MaaS-ID: d52bfad0-ee4b-4f72-9f38-efce115ffb49
 * Accept language: nl
+
+## Tests
+
+### Postman-collections
+Open your postman and click `import`->`Folder`, then select `postman-collections` folder
