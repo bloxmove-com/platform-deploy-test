@@ -15,3 +15,14 @@ Select component to install:
 
 Enter `0` to install all component, or you can also enter 1~3 to select the component you want to install.
 
+# component specific notes
+
+## fleet-node
+You should prepare `2` account key pairs for the `Fleet Owner` and `KYC issuer`, you can create them by using MetaMask
+
+## TOMP-gateway
+
+Preparing your TOMP transport-operator `URL`, `MaaS-ID` and `accept language`, here is an example operator for testing purposes
+* URL: http://3.123.228.24:8083
+* MaaS-ID: d52bfad0-ee4b-4f72-9f38-efce115ffb49
+* Accept language: nl
