@@ -1,7 +1,7 @@
-# platform-deploy-test
+# Platform-deploy-test
 All the tools for deploy and test MBP platform
 
-# easy installation for the platform
+## Easy installation for the platform
 ```shell
 > ./deploy.sh
 Easy install tool for mobility blockchain platform
@@ -15,12 +15,12 @@ Select component to install:
 
 Enter `0` to install all component, or you can also enter 1~3 to select the component you want to install.
 
-# component specific notes
+## Component specific notes
 
-## fleet-node
+### Fleet-node
 You should prepare `2` account key pairs for the `Fleet Owner` and `KYC issuer`, you can create them by using MetaMask
 
-## TOMP-gateway
+### TOMP-gateway
 
 Preparing your TOMP transport-operator `URL`, `MaaS-ID` and `accept language`, here is an example operator for testing purposes
 * URL: http://3.123.228.24:8083
