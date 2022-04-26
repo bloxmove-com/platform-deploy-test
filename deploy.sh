@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Easy install tool for mobility blockchain platform"
 echo "Select component to install:"
 echo "0.all"
