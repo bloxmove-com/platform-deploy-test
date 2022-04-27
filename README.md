@@ -31,3 +31,11 @@ Preparing your TOMP transport-operator `URL`, `MaaS-ID` and `accept language`, h
 
 ### Postman-collections
 Open your postman and click `import`->`Folder`, then select `postman-collections` folder
+
+#### fleet-node requests
+You can create and get vehicle assets by using the request under `1. create new vehicles`/`1. fleet-node operations`.
+
+There are two requests about fleet-node:
+
+1. `create vehicle asset`: Set the VIN in request body manually and click `Send` to create a vehicle asset.
+2. `get vehicle asset`: Modify te VIN in request url and click `Send` to get the did related to that VIN.

@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "bf0984eb-9b89-4d73-baa9-bc4ea84543f1",
-		"name": "1. create new vehicles and service-packages",
+		"name": "1. create new vehicles",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
