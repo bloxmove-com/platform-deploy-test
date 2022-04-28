@@ -1,4 +1,4 @@
-git clone  https://github.com/bloxmove-com/fleet-node.git
+git clone https://github.com/bloxmove-com/fleet-node.git
 
 cd fleet-node
 
