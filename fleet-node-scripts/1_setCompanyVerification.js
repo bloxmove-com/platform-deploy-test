@@ -1,7 +1,7 @@
 /**
  * Run: node ./setCompanyVerification.js "companyDID" "kycAccountPrivateKey"
  */
-const assetlib = require('@bloxmove-com/did-asset-library-core')
+const assetlib = require('@bloxmove-com/did-asset-library-core-obfuscated')
 
 const runtimeConfig = {
     web3Provider: 'https://stablestage.kooltech.com.tw/besu-validator1-rpc',
