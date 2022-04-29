@@ -18,7 +18,7 @@ Enter `0` to install all component, or you can also enter 1~3 to select the comp
 ## Component specific notes
 
 ### Fleet-node
-You should prepare `1` account key pairs for the `Fleet Owner` , you can create them by using MetaMask
+You should prepare `1` account keypair for the `Fleet Owner` , you can create it by using MetaMask
 
 ### TOMP-gateway
 
