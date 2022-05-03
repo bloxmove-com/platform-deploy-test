@@ -1,5 +1,5 @@
-git clone https://github.com/bloxmove-com/identity-ionic-native-plugin.git
+git clone https://github.com/bloxmove-com/bloxmove-identity-sdk-public.git
 
-cd identity-ionic-native-plugin
+cd bloxmove-identity-sdk-public
 
 ./build.sh
