@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "8e765b34-ce10-4c86-aac0-1e16c8240804",
+		"name": "virtual-car-wallet (general requests)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add car",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apiKeyCarWallet}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vin\": \"<replace-with-vin>\",\n\t\"zone\": \"<replace-with-zone>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{carWalletUrl}}/api/v1/cars",
+					"host": [
+						"{{carWalletUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
