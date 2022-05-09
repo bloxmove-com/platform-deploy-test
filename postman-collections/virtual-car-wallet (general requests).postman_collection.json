@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8e765b34-ce10-4c86-aac0-1e16c8240804",
+		"_postman_id": "4b4bf5ce-b104-4919-b8db-39afbe3c6f2b",
 		"name": "virtual-car-wallet (general requests)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -50,6 +50,41 @@
 						"api",
 						"v1",
 						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get car(set VIN manually)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apiKeyCarWallet}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{carWalletUrl}}/api/v1/cars/HDZBRBD37JDSN3",
+					"host": [
+						"{{carWalletUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cars",
+						"HDZBRBD37JDSN3"
 					]
 				}
 			},
