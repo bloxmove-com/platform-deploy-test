@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "4f6a14d2-1bdb-40ca-bb50-537c97740fdd",
+		"name": "vehicle-authority",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get car registation(set VIN manually)",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "{{apiKeyCarWallet}}",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "apiKey",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{vehicleAuthorityUrl}}/api/v1/registrations/HDZBRBD37JDSN3",
+					"host": [
+						"{{vehicleAuthorityUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"registrations",
+						"HDZBRBD37JDSN3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

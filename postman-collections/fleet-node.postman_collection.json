@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "9ecc4cae-e4e7-4fbb-9ffe-3885b055305e",
+		"name": "fleet-node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.create vehicle asset",
+			"item": [
+				{
+					"name": "create vehicle asset (set VIN manully)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vin\": \"HDZBRBD37JDSN3\",\n  \"walletDIDs\": [\"{{carWalletDID}}\"],\n  \"proofOfOwnership\": \"my-proof-of-ownership-url-no-need-to-change\"\n}\n"
+						},
+						"url": {
+							"raw": "{{fleetnodeA}}/vehicle-assets",
+							"host": [
+								"{{fleetnodeA}}"
+							],
+							"path": [
+								"vehicle-assets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vehicle asset (set VIN manually!)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{fleetnodeA}}/vehicle-assets/HDZBRBD37JDSN3",
+							"host": [
+								"{{fleetnodeA}}"
+							],
+							"path": [
+								"vehicle-assets",
+								"HDZBRBD37JDSN3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{apiKeyFleetnodeA}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "apiKey",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
