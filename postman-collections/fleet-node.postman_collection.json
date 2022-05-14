@@ -36,6 +36,34 @@
 					"response": []
 				},
 				{
+					"name": "update vehicle asset (set asset-did manully)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"assetDID\": <asset_did>,\n  \"zone\": \"CHENGDU\",\n  \"thingId\": \"test-thing-id\"\n}\n"
+						},
+						"url": {
+							"raw": "{{fleetnodeA}}/vehicle-assets/HDZBRBD37JDSN3",
+							"host": [
+								"{{fleetnodeA}}"
+							],
+							"path": [
+								"vehicle-assets",
+								"HDZBRBD37JDSN3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "get vehicle asset (set VIN manually!)",
 					"request": {
 						"method": "GET",
