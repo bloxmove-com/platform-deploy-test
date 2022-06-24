@@ -13,8 +13,8 @@ const runtimeConfig = {
     ipfsProtocol: `http`,
     ipfsBasePath: '/api/v0',
     // accountAddress: '0x071CEf853a8f8f6E49c8292196c0aF49CBB2b5ab',
-    accountAddress: process.argv[3],
-    accountPrivateKey: process.argv[4],
+    accountAddress: process.argv[2],
+    accountPrivateKey: process.argv[3],
     didRegistryAddress: process.argv[5],
     attestationRegistryAddress: process.argv[6],
     ensAddress: process.argv[7],
@@ -22,6 +22,7 @@ const runtimeConfig = {
     resolverName: 'resolver',
     gasLimit: 6721975
 }
+
 
 async function init() {
 
@@ -37,7 +38,7 @@ async function init() {
 
 async function setAndGetDIDDocument(ethereumAssetService) {
     const did = `did:ethr:${runtimeConfig.networkName}:${runtimeConfig.accountAddress}`;
-    // console.log('did: ' + did);
+    console.log('did: ' + did);
     const document = await ethereumAssetService.getDIDDocument(did);
 
     const service = [{
