@@ -4,4 +4,4 @@ COPY .npmrc package.json package-lock.json ./
 RUN npm install
 RUN rm -f .npmrc
 
-COPY ./fleet-node-scripts ./
+COPY ./fleet-node-scripts/sandbox ./

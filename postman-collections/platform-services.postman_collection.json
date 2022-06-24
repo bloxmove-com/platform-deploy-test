@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "c5d36665-0874-4066-85ea-86ea68351a35",
+		"name": "platform-services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Identity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{platformServicesUrl}}/api/v1/identity/<account_address>",
+					"host": [
+						"{{platformServicesUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"identity",
+						"<account_address>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resolve DID Document",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{platformServicesUrl}}/api/v1/identity/<did>",
+					"host": [
+						"{{platformServicesUrl}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"identity",
+						"<did>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

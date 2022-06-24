@@ -1,11 +1,11 @@
-git clone https://github.com/bloxmove-com/company-node-public.git
+git clone https://github.com/bloxmove-com/virtual-car-wallet.git
 
-cd company-node-public
+cd virtual-car-wallet
 
 git pull
 
-read -p "Enter Fleet Owner Address: " address
-read -p "Enter Fleet Owner PrivateKey: " privateKey
+read -p "Enter Wallet Owner Address: " address
+read -p "Enter Wallet  Owner PrivateKey: " privateKey
 #read -p "Enter KYC Issuer Address: " kycIssuerAddress
 #read -p "Enter KYC Issuer PrivateKey: " kycIssuerPrivateKey
 

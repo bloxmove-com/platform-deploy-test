@@ -2,4 +2,6 @@ git clone --recurse-submodules https://github.com/bloxmove-com/bloxmove-tomp-gat
 
 cd bloxmove-tomp-gateway
 
+git pull
+
 ./init.sh
